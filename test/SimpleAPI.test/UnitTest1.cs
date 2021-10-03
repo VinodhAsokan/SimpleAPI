@@ -10,6 +10,12 @@ namespace SimpleAPI.test
         static ILogger<WeatherForecastController> logger = null;
         WeatherForecastController cnlrWeather = new WeatherForecastController(logger);
         
+         [Fact]
+        public void SampleTest2()
+        {
+            var ret = cnlrWeather.Get(17);
+            Assert.Equal("13", ret);
+        }
 
         [Fact]
         public void GetReturnsId()
