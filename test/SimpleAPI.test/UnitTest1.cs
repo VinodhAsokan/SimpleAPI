@@ -14,7 +14,7 @@ namespace SimpleAPI.test
         public void SampleTest2()
         {
             var ret = cnlrWeather.Get(17);
-            Assert.Equal("13", ret);g
+            Assert.Equal("13", ret);
         }
 
         [Fact]
